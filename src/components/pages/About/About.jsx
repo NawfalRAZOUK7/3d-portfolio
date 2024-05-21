@@ -7,7 +7,7 @@ const About = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = require("../../../assets/my_resume.pdf");
+    link.href = '/assets/my_resume.pdf'; // Make sure this path is correct
     link.download = 'Nawfal_Razouk_Resume.pdf';
     document.body.appendChild(link);
     link.click();
